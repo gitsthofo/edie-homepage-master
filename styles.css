@@ -1,0 +1,690 @@
+
+:root{
+
+    --footer-color:  #100E1D;
+    --button-color:  #2D9CDB;
+    --input-color:  #ffffff;
+    --box-shadow:  rgba(129, 127, 127, 0.555);
+    --icons-color: #27AE60;
+    --red-color: #EB5757;
+    --transition-color: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+ 
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+
+    margin: 0px;
+    padding: 3em;
+}
+
+/* base color page*/
+.items{
+    padding: 0px 0px 1em;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  box-shadow: -1px 2px 12px rgba(129, 127, 127, 0.555);
+}
+
+/* grid container */
+
+.grid-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.5rem;
+    height: 100vh;
+
+ 
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 14%;
+    transition:  margin ease-in-out 4s;
+   
+
+}
+
+a:hover{
+
+    background: var(--transition-color);
+    
+}
+
+.mobile-menu{
+    display: none;
+}
+/* max-width 600px  */
+@media (max-width: 600px) {
+  .grid-container{
+    display: grid;
+   grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .navbar, .Edie{
+    margin: 20px 0px 20px;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+ 
+}
+
+  .mobile-menu {
+    display: block;
+    width: 40px;
+    position: relative;
+   left: 20%;
+   color: #333333;
+   padding-left: 30px;
+   
+ }
+
+ .navbar a{
+    display: none;
+ }
+
+
+
+.footer ol  {
+    position: relative;
+    right: 30%;
+    padding: 0px;
+    margin:  0px;
+}
+
+ .social-edie{
+    position: relative;
+    right: 18%;
+
+}
+.myform{
+    position: relative;
+    left: 15%;
+}
+
+.footer{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    background-color: var(--footer-color);
+
+    }
+    
+
+    }
+
+
+.navbar .Edie{
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 35px;
+    margin-right: 42%;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    margin-left: 2%;
+    padding:  0px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
+    
+}
+/* welcome section */
+
+.welcome p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-right: 220px;
+  color: var(--button-color)
+}
+
+
+.welcome header{
+    margin: 40px auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    width: 534px;
+}
+
+.welcome, .main-image{
+    text-align: center;
+    border-radius: 18px;
+}
+
+/*************************************/
+
+
+/* story section */
+
+
+.story header{
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    margin: 40px auto;
+    width: 366px;
+}
+
+.story p{
+    width: 366px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin: 0px auto;
+    color: #4F4F4F;
+    
+}
+
+.stroy, .myform{
+    width: 350px;
+    text-align: center;
+    margin: 0px auto; 
+}
+.myform h6{
+padding-right: 170px;
+}
+
+.stroy .myform, h6{
+  color: #100E1D;
+  font-size: 14px;
+ font-weight: 400;
+ line-height: 20px;
+}
+
+.story .myform input{
+
+    background-color: rgba(223, 216, 216, 0.555);
+}
+
+
+/***********************************  */
+
+/* service section */
+
+.service{
+   position: relative;
+}
+
+.service header{
+    width: 350px;
+    line-height: 54px;
+    font-size: 36px;
+    font-weight: 500;
+    position: relative;
+    top: 15%;
+    left: 24%;
+
+}
+
+
+ .flex-container{
+    display: flex;
+    padding: 15% 15px 0px;
+    justify-content: center;
+}
+
+ .ux-design{
+    padding: 20px;
+    width: 291px;
+    margin: 0px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+ .box-shadow{
+    border-radius: 24px;
+    box-shadow: -1px 1px 30px rgba(223, 216, 216, 0.555);
+}
+
+.color-1{
+    text-align: center;
+    background-color: var(--button-color);
+    color: whitesmoke;
+    width: 67px;
+    height: 67px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+}
+
+
+.color-2{
+    text-align: center;
+    background-color: var(--icons-color);
+    color: whitesmoke;
+    width: 67px;
+    height: 67px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+    
+}
+
+
+.color-3{
+    text-align: center;
+    background-color: var(--red-color);
+    color: whitesmoke;
+    width: 67px;
+    height: 67px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 16px;
+}
+
+
+
+.color-1 span{
+margin: 10px 0px;
+}
+
+.color-2 span{
+    margin: 10px 0px;
+    }
+    .color-3 span{
+        margin: 10px 0px;
+        }
+            
+
+.ux-design p{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+opacity: 0.9;
+
+}
+.ux-design li{ 
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+padding: 0px;
+list-style: none;
+
+
+
+}
+.ux-design button{
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+border: none;
+border-radius: 5px;
+padding: 12px 16px;
+
+}
+
+
+
+/* juice product homepage */
+
+.good-design{
+text-align: center;
+position: relative;
+
+}
+
+.good-design header{
+width: 420px;
+font-weight: 500;
+font-size: 36px;
+line-height: 54px;
+position: relative;
+top: 330px;
+left: 21%;
+
+}
+
+
+
+.good-design img{
+    width: 390px;
+    border-radius: 24px;
+}
+
+.good-design .smart-home{
+margin-right: 30%;
+position: relative;
+top: 400px;
+padding: 20px;
+
+
+}
+.good-design .onbounding{
+    margin-left: 30%;
+    position: relative;
+    top: -300px;
+}
+
+.good-design .booking-system{
+    position: relative;
+    margin-right: 30%;
+    top: 100px;
+
+}
+.good-design .juice-product{
+    margin-left: 30%;
+    position: relative;
+    top: -530px; 
+}
+
+/* images and text */
+
+
+
+.smart-home p{
+    color: #828282;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+
+}
+
+.smart-home li{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    list-style: none;
+    padding: 0px;
+}
+
+
+
+
+/* booking system */
+
+.booking-system p{
+    color: #828282;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+
+}
+
+
+.booking-system li{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    list-style: none;
+    padding: 0px;
+}
+
+
+/* onbounding */
+.onbounding p{
+    color: #828282;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+
+}
+
+.onbounding li{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    list-style: none;
+    padding: 0px;
+}
+
+/* juice */
+.juice-product p{
+    color: #828282;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+
+}
+
+.juice-product li{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    list-style: none;
+   
+    padding: 0px;
+}
+
+.good-design .see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   bottom: 20%;
+   left: 64%;  
+}
+
+.see-more a{
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--button-color);
+    text-decoration: none;
+}
+
+.see-more span{
+
+    margin-left: 30px;
+    color: var(--button-color);
+}
+
+
+/* meet the team */
+
+.meet-team{
+position: relative;   
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.meet-team .laid-back{
+    width: 400px;
+    height: auto;
+ 
+    margin: 0% 10% 0%;
+}
+
+.para-style{
+width: 273px;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: #4F4F4F;
+}
+
+.imgs-group{
+position: relative;
+width: 600px;
+height: 584px;
+top: 55px;
+
+    
+}
+
+.imgs-group img{
+    width: 200px;
+    border-radius: 24px;
+}
+
+
+.imgs-group img:nth-child(1){
+    position: relative;
+    left: 0px;
+    top: 120px;
+}
+
+.imgs-group img:nth-child(2){
+   position: relative;
+}   
+
+
+
+.imgs-group img:nth-child(3){
+    position: relative;
+    top: 0;
+    left: 206px;
+   
+}
+
+
+.meet-team h6{
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--red-color);
+
+}
+
+.meet-team header{
+
+    font-size: 36px;
+    width: 280px;
+}
+
+/* end the team */
+
+
+/* carlos tran */
+.carlos-tran{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.carlos-tran h5{
+    width: 937px;
+    height: 162px;
+    font-size: 36px;
+    font-weight: 500;
+}
+ .tran-imgs{
+    list-style: none;
+    position: relative;
+    top: 0px;
+    right: 24%;
+
+}
+
+.tran-imgs img{
+    width: 135px;
+    height: 162px;
+    border-radius: 24px;
+}
+
+.tran-imgs li{
+    padding: -30px 160px 0px;
+    line-height: 36px;
+    position: relative;
+    top: -30%;
+    left: 75%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+
+}
+
+.tran-imgs .deco{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color:  #828282;
+
+}
+
+
+/* footer items */
+
+.footer{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-right: 20%;
+}
+
+.footer ol {
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 18%;
+}
+
+.footer a{
+    display: block;
+    color: var(--footer-color);
+    text-decoration: none;
+    padding: 5px 0px;
+}
+
+/* styling a form */
+.footer .myform{
+  margin-left: 10%;
+} 
+
+.myform p{
+    color:var(--footer-color);
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+
+}
+.myform input{
+    width: 350px;
+    border: none;
+    height: 57px;
+    border-radius: 12px;
+    margin-right: 170px;    
+    
+}
+
+.myform input::placeholder{
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0px 20px;
+}
+
+.myform .mybtn{
+    width: 94px;
+    height: 49px;
+    border-radius: 12px;
+    font-size: 18px;
+    border: none;
+    color: whitesmoke;
+    background-color: var(--button-color);
+    position: relative;
+    bottom: 53px;
+    left: 125px;
+}
+
+/* form end */
+.footer .social-edie{
+    margin-right: 5%;
+    color: var(--footer-color);
+}
